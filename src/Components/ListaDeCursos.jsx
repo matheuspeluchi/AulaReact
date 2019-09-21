@@ -4,7 +4,13 @@ import Course from './Curso';
 export default (props) => {
   return (
     <div>
-      {props.list.map(course => <Course title={course}/>)}
+      <ul>        
+          {props.list.map(course =>
+            <li> 
+              <Course title={course}/>
+            </li>
+          )}
+      </ul>
     </div>
   )
 }
